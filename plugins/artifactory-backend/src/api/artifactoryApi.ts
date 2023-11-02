@@ -83,9 +83,6 @@ export class ArtifactoryApi implements Artifactory {
                                         .aqlSearch(`items.find({
                                             "$or": [
                                               {
-                                                "@${artifactProperty}": {
-                                                  "$eq": "${entityName}"
-                                                },
                                                 "path": {
                                                   "$eq": "${entityName}"
                                                 }
